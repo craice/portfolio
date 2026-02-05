@@ -13,7 +13,7 @@ This portfolio presents selected projects from 14+ years of experience in UX/UI 
 - **Purissimo** - Minimalist CSS-only design system
 - **Atman** - Framework-agnostic Web Components design system
 - **Calix MVP** - AI-powered demand planning platform
-- **STOUT** - Industrial accounting software
+- **STOUT** - Accounting software
 - **Listo 360** - Engineering and facilities analytics platform
 - **ProGerar** - Offline-first livestock management app
 
