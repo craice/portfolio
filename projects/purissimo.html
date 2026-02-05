@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <!-- Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-6S6KJWPL23"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-6S6KJWPL23');
+  </script>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Purissimo - A minimalist design system in pure CSS. Zero JavaScript. Maximum accessibility.">
+  <title>Purissimo - Rafael Craice</title>
+  <link rel="stylesheet" href="../assets/css/style.css">
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>RC</text></svg>">
+</head>
+<body>
+  <header class="header">
+    <div class="container header__inner">
+      <a href="../index.html" class="header__logo">Rafael Craice</a>
+      <nav class="header__nav" id="nav">
+        <a href="../index.html" class="header__nav-link header__nav-link--active">Work</a>
+        <a href="../about.html" class="header__nav-link">About</a>
+      </nav>
+      <button class="header__menu-toggle" aria-label="Toggle menu" onclick="document.getElementById('nav').classList.toggle('header__nav--open')">
+        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"/>
+        </svg>
+      </button>
+    </div>
+  </header>
+
+  <main>
+    <section class="project-hero">
+      <div class="container container--narrow">
+        <h1 class="project-hero__title">Purissimo</h1>
+        <p class="project-hero__tagline">A minimalist design system in pure CSS. Zero JavaScript. Maximum accessibility.</p>
+        <div class="project-hero__links">
+          <a href="https://craice.github.io/purissimo/" target="_blank" rel="noopener" class="project-hero__link">Live Site</a>
+          <a href="https://github.com/craice/purissimo" target="_blank" rel="noopener" class="project-hero__link">GitHub</a>
+        </div>
+      </div>
+    </section>
+
+    <section class="project-content">
+      <div class="container container--narrow">
+        <div class="project-section">
+          <h2 class="project-section__title">Overview</h2>
+          <div class="project-section__content">
+            <p>Purissimo is a design system that proves modern web doesn't need complexity. Built entirely with HTML5 and CSS—no JavaScript, no build tools, no dependencies—it delivers accessible, performant components inspired by the purity of Antarctic ice.</p>
+          </div>
+        </div>
+
+        <div class="project-section">
+          <h2 class="project-section__title">The Challenge</h2>
+          <div class="project-section__content">
+            <p>The web is drowning in complexity. Megabytes of JavaScript for a button. Build tools for build tools. Dependencies upon dependencies. I wanted to explore: what can we achieve with just the web platform itself?</p>
+          </div>
+        </div>
+
+        <div class="project-section">
+          <h2 class="project-section__title">My Role</h2>
+          <div class="project-section__content">
+            <p>End-to-end design and development: design system architecture, visual design, CSS implementation, documentation, and project site.</p>
+          </div>
+        </div>
+
+        <div class="project-section">
+          <h2 class="project-section__title">Process & Approach</h2>
+          <div class="project-section__content">
+            <ul class="key-points">
+              <li><strong>Constraint-driven design:</strong> The absence of JavaScript forced creative solutions using modern CSS (:has(), :target, CSS custom properties)</li>
+              <li><strong>Accessibility-first:</strong> WCAG 2.1 AA compliance as baseline, not afterthought</li>
+              <li><strong>AI collaboration:</strong> Built iteratively with Claude as design partner—demonstrating a new model of human-AI creative collaboration</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="project-section">
+          <h2 class="project-section__title">Key Design Decisions</h2>
+          <div class="project-section__content">
+            <ul class="key-points">
+              <li><strong>Base-4 spacing system:</strong> Industry standard, works with common font sizes, easy to reason about</li>
+              <li><strong>Antarctic color palette:</strong> Reinforces the "purity" concept—whites, pale blues, glacial tones</li>
+              <li><strong>Outfit typography:</strong> Geometric, modern, excellent readability, freely available</li>
+              <li><strong>Native HTML patterns:</strong> &lt;details&gt; for accordions, :target for modals, radio inputs for tabs</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="project-section">
+          <h2 class="project-section__title">Components Delivered</h2>
+          <div class="project-section__content">
+            <p>Buttons, Forms (inputs, selects, checkboxes, toggles), Cards, Alerts, Tables, Accordion, Tabs, Modal, Badges, Tooltips, Navigation—all with hover, focus, active, and disabled states.</p>
+          </div>
+        </div>
+
+        <div class="project-section">
+          <h2 class="project-section__title">Results</h2>
+          <div class="results-grid">
+            <div class="result-item">
+              <div class="result-item__value">0</div>
+              <div class="result-item__label">Lines of JavaScript</div>
+            </div>
+            <div class="result-item">
+              <div class="result-item__value">~60KB</div>
+              <div class="result-item__label">Unminified CSS</div>
+            </div>
+            <div class="result-item">
+              <div class="result-item__value">AA</div>
+              <div class="result-item__label">WCAG Compliance</div>
+            </div>
+            <div class="result-item">
+              <div class="result-item__value">0</div>
+              <div class="result-item__label">Runtime Dependencies</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="project-gallery">
+      <div class="container">
+        <h2 class="project-gallery__title">Project Gallery</h2>
+        <div class="gallery-grid gallery-grid--single">
+          <figure class="gallery-item">
+            <img src="../assets/images/purissimo/hero.png" alt="Purissimo design system overview" loading="lazy">
+          </figure>
+          <figure class="gallery-item">
+            <img src="../assets/images/purissimo/components.png" alt="Purissimo components showcase" loading="lazy">
+          </figure>
+          <figure class="gallery-item">
+            <img src="../assets/images/purissimo/process.png" alt="Purissimo design process" loading="lazy">
+          </figure>
+        </div>
+      </div>
+    </section>
+
+    <nav class="project-nav">
+      <div class="container project-nav__inner">
+        <span></span>
+        <a href="atman.html" class="project-nav__link project-nav__link--next">
+          <span class="project-nav__label">Next Project</span>
+          <span class="project-nav__title">Atman</span>
+        </a>
+      </div>
+    </nav>
+  </main>
+
+  <footer class="footer">
+    <div class="container footer__inner">
+      <p class="footer__copyright">Rafael Craice</p>
+      <div class="footer__links">
+        <a href="mailto:craice@gmail.com" class="footer__link">Email</a>
+        <a href="https://linkedin.com/in/rafael-craice" target="_blank" rel="noopener" class="footer__link">LinkedIn</a>
+        <a href="https://github.com/craice" target="_blank" rel="noopener" class="footer__link">GitHub</a>
+      </div>
+    </div>
+  </footer>
+</body>
+</html>

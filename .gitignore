@@ -1,0 +1,25 @@
+# Instructions
+PORTFOLIO_INSTRUCTIONS.md
+
+# OS generated files
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+
+# Editor directories and files
+.idea/
+.vscode/
+*.swp
+*.swo
+*~
+
+# Original assets (if any)
+portfolio_assets/
+
+
+# Claude
+.claude/
