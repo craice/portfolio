@@ -22,8 +22,8 @@
   --color-glacial-500: #0ea5e9;
   --color-glacial-700: #0369a1;
   --color-glacial-900: #0c4a6e;
-  --color-action: var(--color-glacial-500);
-  --color-action-hover: var(--color-glacial-700);
+  --color-action: var(--color-gray-700);
+  --color-action-hover: var(--color-gray-900);
 
   /* Typography */
   --font-family-base: 'Outfit', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
@@ -525,7 +525,7 @@ img {
   top: 10px;
   width: 8px;
   height: 8px;
-  background: var(--color-glacial-300);
+  background: var(--color-mist);
   border-radius: 50%;
 }
 
@@ -547,7 +547,7 @@ img {
 .result-item__value {
   font-size: var(--text-3xl);
   font-weight: var(--font-bold);
-  color: var(--color-glacial-700);
+  color: var(--color-gray-800);
   margin-bottom: var(--space-1);
 }
 
@@ -713,7 +713,7 @@ img {
   color: var(--color-gray-900);
   margin-bottom: var(--space-4);
   padding-bottom: var(--space-2);
-  border-bottom: 2px solid var(--color-glacial-300);
+  border-bottom: 2px solid var(--color-mist);
 }
 
 .contact-list {
