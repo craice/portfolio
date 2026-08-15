@@ -10,7 +10,7 @@ Personal one-page site: name, social links, a tagline, and links out to products
 
 - Static HTML + CSS + a small amount of vanilla JavaScript (mouse-follow crosshair guides, a trailing cursor dot, and a pt/en language toggle) + Google Analytics
 - No build step, no framework, no dependencies
-- 'IBM Plex Mono' (Google Fonts) for mono details, system sans-serif for everything else
+- 'IBM Plex Mono' (Google Fonts) for mono details, 'Inter' (Google Fonts) for everything else
 
 ## Structure
 
@@ -25,6 +25,7 @@ Personal one-page site: name, social links, a tagline, and links out to products
 
 ## Contact
 
-- LinkedIn: [linkedin.com/in/rafael-craice](https://linkedin.com/in/rafael-craice)
+- LinkedIn: [linkedin.com/in/rafael-craice](https://www.linkedin.com/in/rafael-craice/)
+- GitHub: [github.com/craice](https://github.com/craice)
 - Medium: [medium.com/@craice](https://medium.com/@craice)
 - Flickr: [flickr.com/craice](https://www.flickr.com/craice/)
