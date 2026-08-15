@@ -1,51 +1,30 @@
 # Rafael Craice - Portfolio
 
-Personal portfolio website showcasing product design work across B2B SaaS, AI-powered products, and design systems.
+Personal one-page site: name, social links, a tagline, and links out to products and projects.
 
 ## Live Site
 
 **[craice.me](https://craice.me)**
 
-## About
-
-This portfolio presents selected projects from 14+ years of experience in UX/UI and strategic design, including:
-
-- **Purissimo** - Minimalist CSS-only design system
-- **Atman** - Framework-agnostic Web Components design system
-- **Calix MVP** - AI-powered demand planning platform
-- **STOUT** - Accounting software
-- **Listo 360** - Engineering and facilities analytics platform
-- **ProGerar** - Offline-first livestock management app
-
 ## Built With
 
-This site is built following the principles of [Purissimo](https://craice.github.io/purissimo/) - a minimalist design system in pure CSS:
-
-- Zero JavaScript (except Google Analytics)
-- HTML5 + CSS3 only
-- WCAG 2.1 AA accessible
-- Mobile-first responsive design
-- Outfit typeface via Google Fonts
+- Static HTML + CSS + a small amount of vanilla JavaScript (mouse-follow crosshair guides, a trailing cursor dot, and a pt/en language toggle) + Google Analytics
+- No build step, no framework, no dependencies
+- 'IBM Plex Mono' (Google Fonts) for mono details, system sans-serif for everything else
 
 ## Structure
 
 ```
-├── index.html          # Homepage with project grid
-├── about.html          # About page
-├── projects/           # Individual project pages
-│   ├── purissimo.html
-│   ├── atman.html
-│   ├── calix.html
-│   ├── stout.html
-│   ├── listo360.html
-│   └── progerar.html
+├── index.html          # The entire site
 └── assets/
     ├── css/
-    │   └── style.css   # Purissimo-based styles
-    └── images/         # Project images
+    │   └── style.css
+    └── js/
+        └── main.js
 ```
 
 ## Contact
 
 - LinkedIn: [linkedin.com/in/rafael-craice](https://linkedin.com/in/rafael-craice)
-- GitHub: [github.com/craice](https://github.com/craice)
+- Medium: [medium.com/@craice](https://medium.com/@craice)
+- Flickr: [flickr.com/craice](https://www.flickr.com/craice/)
