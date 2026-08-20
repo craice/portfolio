@@ -11,7 +11,7 @@ The design originates from a Claude Design (claude.ai/design) prototype — proj
 ## Working with this repo
 
 - No install/build/lint/test commands — there's no `package.json`. Preview by opening `index.html` directly or serving the directory (`python3 -m http.server`).
-- Everything lives in three files: `index.html`, `assets/css/style.css`, `assets/js/main.js`. Don't split these up or add per-page stylesheets/scripts — the whole site is one page.
+- The site itself lives in three files: `index.html`, `assets/css/style.css`, `assets/js/main.js`. Don't split these up or add per-page stylesheets/scripts — the whole site is one page. Alongside them sit `robots.txt`, `sitemap.xml`, and `assets/og.png` (see *SEO*).
 - Google Analytics (`G-6S6KJWPL23`) is the one piece carried over from the previous multi-page version of this site; keep the snippet in `index.html`'s `<head>` when editing markup.
 
 ## Architecture
@@ -29,10 +29,18 @@ All three attach global `mousemove` listeners, so on touch devices (no `mousemov
 - Colors are `oklch()` custom properties in `:root` (`--bg`, `--ink` at various alpha levels, `--accent`). Reuse these tokens; don't hardcode new colors.
 - Fluid sizing via `clamp()` on font sizes and vertical spacing instead of breakpoint-based media queries — there is intentionally no mobile/desktop split beyond the `hover: none` rule above.
 - Fonts: `IBM Plex Mono` (Google Fonts) for all-caps/technical bits (labels, URLs, readout, lang toggle), `Inter` (Google Fonts, `--sans`) for the logo and everything else — the logo (`.logo`) is set bold.
-- The hero heading (`#heroPt`) has a manual `<br>` after "organizo," for a deliberate line break; it isn't derived from wrapping/`max-width`. The `#heroEn` version doesn't have one — keep that in mind if either copy changes.
+- The hero tagline (`#heroPt`, a `<p>` — see *SEO*) has a manual `<br>` after "organizo," for a deliberate line break; it isn't derived from wrapping/`max-width`. The `#heroEn` version doesn't have one — keep that in mind if either copy changes.
 
 ### Social icons
 Each `.social__link` in `index.html` embeds the brand's real logo as an inline SVG (`viewBox="0 0 24 24"`, `fill: currentColor` via `.social__icon svg` in `style.css`) — no icon font or external request. Display order is fixed: LinkedIn, GitHub, Medium, Flickr. Keep new/reordered entries consistent with that pattern (inline SVG, not text abbreviations or icon-font glyphs).
+
+### SEO
+The page is optimized around the queries "craice" and "rafael craice", so a few things in `index.html` are load-bearing:
+- The `<title>`, `<meta name="description">`, canonical, OG/Twitter tags, and the JSON-LD block all repeat the name — keep "Rafael Craice" in each if the copy changes.
+- The JSON-LD `@graph` holds a `Person` (with `alternateName: "craice"` and `sameAs` pointing at the four social profiles), a `WebSite`, and a `ProfilePage`, cross-referenced by `@id`. If a social link is added/removed in the markup, mirror it in `sameAs` — and keep `rel="me"` on `.social__link` anchors (the identity signal); product/project rows stay plain `rel="noopener"`.
+- Heading hierarchy is deliberate: the `.logo` is the single `<h1>` ("rafael craice"), the hero tagline is a `<p class="hero">`, and the two `.links__label`s are `<h2>`s. Don't promote the hero back to `<h1>` — the name has to be the page's heading. `.links__label` sets `font-weight: 400` precisely because it's an `<h2>` now.
+- `assets/og.png` (1200×630) is generated to match the site — cream `--bg`, `--ink` text, `--accent` dot, Inter + IBM Plex Mono. Regenerate it if the tagline changes; its dimensions are declared in `og:image:width`/`height`.
+- `sitemap.xml` lists the one URL and carries a `<lastmod>` — bump it on meaningful content changes. `robots.txt` just allows everything and points at the sitemap.
 
 ### Adding a link
 Product/project links are hardcoded `<a class="links__row ...">` entries under `.links`/`.links--projects` in `index.html` — there's no data-driven list. To add one, copy an existing `.links__row` (first item in a section gets `links__row--top`; the last also gets `links__row--bottom` for the closing border) and update the name/URL text.

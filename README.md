@@ -16,7 +16,10 @@ Personal one-page site: name, social links, a tagline, and links out to products
 
 ```
 ├── index.html          # The entire site
+├── robots.txt          # Crawler directives + sitemap pointer
+├── sitemap.xml         # Single-URL sitemap
 └── assets/
+    ├── og.png          # 1200×630 Open Graph / Twitter card image
     ├── css/
     │   └── style.css
     └── js/
